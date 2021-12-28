@@ -5,8 +5,8 @@ from bs4 import BeautifulSoup as BS
 from urllib.parse import urlparse
 
 class wrapper:
-	host = 'https://vse42.ru'
-	url = 'https://vse42.ru/news/all/kuzbass/1'
+	host = '.........'
+	url = '........'
 	lastkey = ""
 	lastkey_file = ""
 
@@ -40,7 +40,7 @@ class wrapper:
 		html = BS(r.content, 'html.parser')
 
 		# parse poster image url
-		poster = re.match(r'background-image:\s*url\((.+?)\)', html.select('.news-obj-wide > .image')[0]['style'])
+		poster = re.match(r'background-image:\s*url\((.+?)\)', html.select('......... > .image')[0]['style'])
 
 		# remove some stuff
 		remels = html.select('.article.article-show > *')
@@ -76,7 +76,7 @@ class wrapper:
 		elif(score == 'score-2'):
 			return "Сойдет"
 		elif(score == 'score-3'):
-			return "Неплохо "
+			return "Хорошо"
 		elif(score == 'score-4'):
 			return "Превосходно"
 

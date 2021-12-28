@@ -5,7 +5,7 @@ from datetime import datetime
 from aiogram import Bot, Dispatcher, executor, types
 from sqlighter import SQLighter
 
-from vse42 import wrapper
+from .... import .....
 
 # задаем уровень логов
 logging.basicConfig(level=logging.INFO)
@@ -18,7 +18,7 @@ dp = Dispatcher(bot)
 db = SQLighter('db.db')
 
 # инициализируем парсер
-sg = wrapper('lastkey.txt')
+sg = ......('lastkey.txt')
 
 # команда приветствия
 @dp.message_handler(commands=['start'])
